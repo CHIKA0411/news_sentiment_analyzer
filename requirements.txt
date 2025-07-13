@@ -17,4 +17,4 @@ cssselect
 python-dateutil
 
 # Optional: for auto-refresh support
-streamlit-autorefresh
+streamlit_autorefresh
