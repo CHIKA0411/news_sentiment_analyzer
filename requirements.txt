@@ -6,7 +6,7 @@ matplotlib
 seaborn
 wordcloud
 newspaper3k
-lxml
+lxml==4.9.3
 tqdm
 Pillow
 feedparser
