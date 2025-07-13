@@ -6,3 +6,4 @@ wordcloud
 beautifulsoup4
 requests
 nltk
+streamlit-autorefresh
