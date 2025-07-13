@@ -1,22 +1,19 @@
-# scraper.py
-
-from newspaper import Article
-from newspaper import build
+import requests
+from bs4 import BeautifulSoup
 
 def scrape_ndtv():
-    paper = build('https://www.ndtv.com/latest', memoize_articles=False)
+    url = "https://www.ndtv.com/latest"
+    headers = {
+        "User-Agent": "Mozilla/5.0"
+    }
+    response = requests.get(url, headers=headers)
+    soup = BeautifulSoup(response.content, "html.parser")
+
     headlines = []
 
-    for article in paper.articles[:10]:  # Limit to 10 for speed
-        try:
-            article.download()
-            article.parse()
-            headlines.append(article.title)
-        except:
-            continue
+    for item in soup.select("div.new_storylising h2 a"):
+        title = item.get_text(strip=True)
+        if title:
+            headlines.append(title)
 
     return headlines
-
-# Test
-if __name__ == "__main__":
-    print(scrape_ndtv())
