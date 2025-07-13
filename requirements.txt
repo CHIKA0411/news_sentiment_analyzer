@@ -5,12 +5,10 @@ nltk
 matplotlib
 seaborn
 wordcloud
-newspaper==0.2.8
+newspaper3k==0.2.8
 lxml==4.9.3
 tqdm==4.66.1
 Pillow==9.5.0
 feedparser==6.0.10
 cssselect==1.2.0
 python-dateutil==2.8.2
-streamlit_autorefresh==0.0.4
-
