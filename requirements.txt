@@ -9,3 +9,4 @@ tqdm
 feedparser
 cssselect
 python-dateutil
+streamlit-autorefresh
