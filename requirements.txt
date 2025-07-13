@@ -1,9 +1,20 @@
+# Core dependencies
 streamlit
-pandas
-seaborn
-matplotlib
-wordcloud
 beautifulsoup4
 requests
 nltk
+matplotlib
+seaborn
+wordcloud
+
+# News scraping
+newspaper3k
+lxml
+tqdm
+Pillow
+feedparser
+cssselect
+python-dateutil
+
+# Optional: for auto-refresh support
 streamlit-autorefresh
