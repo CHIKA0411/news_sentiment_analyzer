@@ -1,5 +1,8 @@
 # 📰 News Sentiment Analyzer Dashboard
 
+
+
+
 A real-time news sentiment analysis dashboard that scrapes headlines from **NDTV** and visualizes their sentiment (Positive, Neutral, Negative) using natural language processing and interactive charts.
 
 ![Dashboard Preview]: https://ibb.co/fG800DD9 <!-- optional: replace with a screenshot or gif -->
